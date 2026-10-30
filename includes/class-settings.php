@@ -291,6 +291,7 @@ class WHCU_Settings {
 			<h1>
 				<?php echo esc_html( get_admin_page_title() ); ?>
 				<a href="<?php echo esc_url( WHCU_Plugin::HELP_URL ); ?>" class="page-title-action" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Help', 'wp-health-check-uptimerobot' ); ?></a>
+				<a href="<?php echo esc_url( WHCU_Plugin::GITHUB_URL ); ?>" class="page-title-action" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'GitHub', 'wp-health-check-uptimerobot' ); ?></a>
 			</h1>
 			<?php settings_errors(); ?>
 
@@ -387,19 +388,14 @@ class WHCU_Settings {
 				<li><?php esc_html_e( 'Interval: 5 minutes is typical.', 'wp-health-check-uptimerobot' ); ?></li>
 			</ol>
 
-			<p class="whcu-brand">
+			<p class="description">
 				<?php
 				printf(
-					/* translators: 1: company name, 2: GitHub, 3: Help */
-					esc_html__( 'A %1$s plugin. %2$s · %3$s', 'wp-health-check-uptimerobot' ),
-					'<a href="' . esc_url( WHCU_Plugin::WEBSITE_URL ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( WHCU_Plugin::AUTHOR_NAME ) . '</a>',
-					'<a href="' . esc_url( WHCU_Plugin::GITHUB_URL ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'GitHub', 'wp-health-check-uptimerobot' ) . '</a>',
-					'<a href="' . esc_url( WHCU_Plugin::HELP_URL ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Help', 'wp-health-check-uptimerobot' ) . '</a>'
+					/* translators: %s: company name linked to the 637 Digital Solutions website */
+					esc_html__( 'A %s plugin.', 'wp-health-check-uptimerobot' ),
+					'<a href="' . esc_url( WHCU_Plugin::WEBSITE_URL ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( WHCU_Plugin::AUTHOR_NAME ) . '</a>'
 				);
 				?>
-			</p>
-			<p class="description">
-				<a href="<?php echo esc_url( WHCU_Plugin::GITHUB_URL ); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html( WHCU_Plugin::GITHUB_URL ); ?></a>
 			</p>
 		</div>
 		<script>
