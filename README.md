@@ -55,6 +55,10 @@ If pretty permalinks are disabled, use the fallback query-string URL shown on th
 2. Activate (or network-activate) the plugin
 3. Visit **Settings → UptimeRobot Health Check** on the site you want to monitor
 
+## License
+
+MIT. See [LICENSE](LICENSE).
+
 ---
 
 Built by [637 Digital Solutions](https://637digital.com). Help: [wiki](https://637digital.com/wiki/). Source: [GitHub](https://github.com/637-Digital/uptime-robot-for-wp).

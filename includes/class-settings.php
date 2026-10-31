@@ -288,11 +288,13 @@ class WHCU_Settings {
 		$permalinks   = (string) get_option( 'permalink_structure' );
 		?>
 		<div class="wrap">
-			<h1>
+			<h1 class="wp-heading-inline">
 				<?php echo esc_html( get_admin_page_title() ); ?>
-				<a href="<?php echo esc_url( WHCU_Plugin::HELP_URL ); ?>" class="page-title-action" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Help', 'wp-health-check-uptimerobot' ); ?></a>
-				<a href="<?php echo esc_url( WHCU_Plugin::GITHUB_URL ); ?>" class="page-title-action" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'GitHub', 'wp-health-check-uptimerobot' ); ?></a>
 			</h1>
+			<span class="title-count"><?php echo esc_html( 'v' . WHCU_VERSION ); ?></span>
+			<a href="<?php echo esc_url( WHCU_Plugin::HELP_URL ); ?>" class="page-title-action" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Help', 'wp-health-check-uptimerobot' ); ?></a>
+			<a href="<?php echo esc_url( WHCU_Plugin::GITHUB_URL ); ?>" class="page-title-action" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'GitHub', 'wp-health-check-uptimerobot' ); ?></a>
+			<hr class="wp-header-end" />
 			<?php settings_errors(); ?>
 
 			<?php if ( is_multisite() ) : ?>
